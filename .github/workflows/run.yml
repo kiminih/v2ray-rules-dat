@@ -172,6 +172,8 @@ jobs:
       - name: Remove alibaba-inc.com from direct-list.txt
         run: |
           sed -i '/^alibaba-inc\.com$/d' direct-list.txt
+          sed -i '/^aliyun-inc\.com$/d' direct-list.txt
+          sed -i '/^antfin-inc\.com$/d' direct-list.txt
           
       - name: Move and zip files and generate sha256 hash
         run: |
