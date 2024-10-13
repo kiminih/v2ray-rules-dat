@@ -24,7 +24,7 @@ jobs:
       run: |
         git remote add upstream https://github.com/Loyalsoldier/v2ray-rules-dat.git
         git fetch upstream
-        git checkout main
+        git checkout release
         git merge upstream/release  # 合并上游分支
 
     # 使用 sed 命令去掉 'alibaba-inc.com' 行
